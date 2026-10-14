@@ -1,0 +1,13 @@
+build/
+out/
+third_party/
+xsim.dir/
+*.wdb
+*.jou
+*.log
+*.pb
+.Xil/
+vivado*.str
+webtalk*
+_site/
+.jekyll-cache/

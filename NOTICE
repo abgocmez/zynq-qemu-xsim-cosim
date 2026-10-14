@@ -1,0 +1,19 @@
+zynq-qemu-xsim-cosim
+Copyright 2026 The zynq-qemu-xsim-cosim authors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This project includes or builds on third-party material:
+
+* libsystemctlm-soc (MIT License), https://github.com/Xilinx/libsystemctlm-soc
+    - sim/winport/remote-port-sk.c and sim/winport/safeio.c are Windows ports of
+      libremote-port/remote-port-sk.c and libremote-port/safeio.c and keep the
+      original MIT notices (Copyright (c) Xilinx Inc, Edgar E. Iglesias).
+    - sim/winport/rp_dpi.c follows the remote-port packet handling of
+      libremote-port/remote-port-tlm.cc (hello, sync, bus access responses).
+    - libremote-port/remote-port-proto.[ch] are cloned at build time into
+      third_party/ and are not redistributed in this repository.
+
+* Xilinx/AMD Vivado, Vitis, QEMU and the Zynq co-simulation device tree
+  (zynq-arm-cosim.dtb) are used from the user's own installation and are not
+  distributed here.
